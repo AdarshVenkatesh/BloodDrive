@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@drawable/side_nav_header"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/mypicture"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:text="Adarsh"
+        android:id="@+id/my_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignEnd="@+id/profile_image"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <TextView
+        android:text="abodinen@syr.edu"
+        android:id="@+id/my_mail_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/my_name"
+        android:layout_alignStart="@+id/profile_image" />
+
+
+</RelativeLayout>

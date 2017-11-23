@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/request_donate_bg">
+
+    <Button
+        android:id="@+id/requestbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:text="Request"
+        android:background="#F4511E"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/donatebutton"
+        android:layout_marginBottom="74dp" />
+
+    <Button
+        android:id="@+id/donatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:text="Donate"
+        android:background="#F4511E"
+        android:layout_above="@+id/requestbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:width="80dp"
+        android:text="BE A HERO GIVE BLOOD"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

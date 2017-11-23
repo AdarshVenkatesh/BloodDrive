@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "799821300261",
+    "firebase_url": "https://blooddriveah.firebaseio.com",
+    "project_id": "blooddriveah",
+    "storage_bucket": "blooddriveah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799821300261:android:85a0f91a3ab9dd3c",
+        "android_client_info": {
+          "package_name": "com.example.harika.blooddriveah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799821300261-j7rtn6hghi9sal9nj3a48smdjfta962l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD5vRYnd75cCCWB-3QzPq6V_uKaj021BA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
