@@ -88,7 +88,7 @@ public class RequestBlood extends AppCompatActivity implements View.OnClickListe
                 {
                     StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
                     StrictMode.setThreadPolicy(policy);
-                   final String send_email;
+                 //  final String send_email;
 
                   //  if(LoginActivity.LoggedIn_User_Mail.equalsIgnoreCase("harika@gmail.com"))
                     //{
