@@ -2,18 +2,12 @@ package com.example.harika.blooddriveah;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Base64;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -39,10 +33,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.onesignal.OneSignal;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import android.os.Handler;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -53,8 +43,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     ProgressDialog processDialog;
     FirebaseAuth firebaseAuth;
     FirebaseUser user;
-    private static final int RC_SIGN_IN = 123;
-    private final int SPLASH_DISPLAY_LENGTH = 1000;
     static String LoggedIn_User_Mail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,13 +52,16 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         OneSignal.startInit(this)
                 .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
                 .unsubscribeWhenNotificationsAreDisabled(true)
+              //  .setNotificationOpenedHandler(new RequestBlood(this))
                 .init();
+
+
         firebaseAuth=FirebaseAuth.getInstance();
 
         if(firebaseAuth.getCurrentUser()!=null)
         {
             finish();
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            startActivity(new Intent(getApplicationContext(),NavigationDrawer.class));
 
             user=firebaseAuth.getCurrentUser();
              LoggedIn_User_Mail=user.getEmail();
@@ -90,7 +81,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        Log.d("in on click","");
 
         if(v==signup)
         {
@@ -120,7 +110,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             if(task.isSuccessful())
                             {
                                 finish();
-                                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                                OneSignal.sendTag("User_ID",userName.getText().toString());
+                                startActivity(new Intent(getApplicationContext(),NavigationDrawer.class));
                             }
                         }
                     });

@@ -3,6 +3,7 @@ package com.example.harika.blooddriveah;
 import android.content.Context;
 import android.util.Log;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -27,9 +28,17 @@ public class UserData {
 
     public void addItemToServer(Map<String,?> user){
         if(user!=null){
-            Log.d("in add server",mRef.toString());
-            String id = (String) user.get("contactNumber");
-            mRef.child(id).setValue(user);
+           // FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
+           // String email=firebaseAuth.getCurrentUser().getEmail();
+
+            String email1=(String)user.get("email");
+            String userName1=email1.replace(".","_");
+
+
+           // String userName=email.replace(".","_");
+          //  Log.d("email is:",email1);
+          //  Log.d("username is:",userName1);
+            mRef.child(userName1).setValue(user);
         }
     }
 }

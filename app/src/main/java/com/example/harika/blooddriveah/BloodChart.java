@@ -1,25 +1,28 @@
 package com.example.harika.blooddriveah;
 
+import android.support.transition.Explode;
+import android.support.transition.Slide;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.util.Log;
-import android.view.LayoutInflater;
+import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
-/**
- * Created by adars on 11/21/2017.
- */
+public class BloodChart extends AppCompatActivity {
 
-public class BloodChart extends Fragment {
-
-    public BloodChart()
-    {
-
-    }
+    TableRow row1;
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        //Log.i("About me", "in about me");
-        return inflater.inflate(R.layout.bloodchart, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_blood_chart);
+
+getWindow().setAllowEnterTransitionOverlap(false);
+       // Explode explode=new Explode();
+        //getWindow().setExitTransition(explode);
+       //
+        android.transition.Explode explode=new android.transition.Explode();
+        getWindow().setExitTransition(explode);
     }
 }

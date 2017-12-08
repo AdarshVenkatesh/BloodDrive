@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/face_icon"
+        android:title="User Profile"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/now_interact_intro_icon"
+        android:title="Message"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title="Events"
+        android:id="@+id/evnt"
+        android:icon="@drawable/events_intro_icon"
+        app:showAsAction="ifRoom"/>
+
+</menu>

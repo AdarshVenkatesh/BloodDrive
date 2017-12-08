@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     >
 
 
@@ -34,7 +33,6 @@
         android:background="@android:color/white"
         android:hint="Enter your email"
         android:inputType="textEmailAddress"
-        android:nextFocusDown="@+id/edit_text_password"
         android:padding="14dp"
         android:textColor="#616161"
         android:textColorHint="#AEAEAE"
@@ -54,14 +52,6 @@
         android:layout_centerHorizontal="true" />
 
 
-    <!--  <com.facebook.login.widget.LoginButton
-          android:id="@+id/login_button"
-          android:layout_width="190dp"
-          android:layout_height="90dp"
-          android:layout_gravity="center_horizontal"
-          android:layout_below="@+id/textView"
-          android:layout_centerHorizontal="true"
-          android:layout_marginTop="23dp" />-->
 
 
     <Button
@@ -83,16 +73,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/edit_text_email"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/blooddrive" />
+        app:srcCompat="@drawable/blood_drive" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="---------------- or --------------------"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/signup"
-        android:layout_centerHorizontal="true" />
+
 
     <!--  <com.google.android.gms.common.SignInButton
           android:id="@+id/google_login"

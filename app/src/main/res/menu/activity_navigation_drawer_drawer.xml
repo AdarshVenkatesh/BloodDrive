@@ -2,19 +2,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-
+        <item
+            android:id="@+id/user_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="User Profile"/>
         <item
             android:id="@+id/donation_events"
-            android:icon="@drawable/mypicture"
+            android:icon="@drawable/ic_event_note_black_24dp"
             android:title="Events"/>
         <item
-            android:id="@+id/safe_donation"
-            android:icon="@drawable/recycler_task2_logo"
-            android:title="Safe Donation"/>
-        <item
             android:id="@+id/blood_chart"
-            android:icon="@drawable/recycler_task2_logo"
+            android:icon="@drawable/ic_view_list_black_24dp"
             android:title="Blood Chart"/>
+        <item
+            android:id="@+id/safety_measures"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="Safety Measures"/>
+        <item
+            android:id="@+id/chatbox"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Chat Box"/>
+        <item
+            android:id="@+id/statistics"
+            android:icon="@drawable/ic_pie_chart_black_24dp"
+            android:title="Statistics"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout"/>
+
+
+
 
 
 

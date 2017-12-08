@@ -60,5 +60,20 @@ public class User implements Serializable {
         this.contactNumber = contactNumber;
     }
 
-    String firstName,lastName,email,password,bloodGroup,contactNumber;
+    String firstName;
+    String lastName;
+    String email;
+    String password;
+    String bloodGroup;
+    String contactNumber;
+
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
+
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
+    }
+
+    String photoUrl;
 }

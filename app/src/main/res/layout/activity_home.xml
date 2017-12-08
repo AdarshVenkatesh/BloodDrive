@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|top"
+        android:background="@color/transparent_black"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha=".5"
+        android:layout_above="@id/layoutDots" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_margin="@dimen/pad_10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:id="@+id/supportText"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Are you a Humane ?? \n GetConnected Here "
+            tools:text="Are you a Humane ?? \n GetConnected Here "/>
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:onClick="launchHomeScreen"
+            android:background="@drawable/button_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gold"
+            android:textSize="17dp"
+            android:paddingRight="60dp"
+            android:paddingLeft="60dp"
+            android:gravity="center"
+            android:text="SIGN UP/LOGIN"
+            tools:text="SIGN UP" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="190dp"
-    android:background="@drawable/side_nav_header"
+    android:background="@drawable/nav_header_bg"
     android:orientation="vertical">
 
 
@@ -11,9 +11,9 @@
         android:id="@+id/profile_image"
         android:layout_width="76dp"
         android:layout_height="76dp"
-        android:src="@drawable/mypicture"
-        android:layout_marginTop="22dp"
-        android:layout_marginStart="70dp"
+        android:src="@drawable/face_icon"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="40dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
     </de.hdodenhof.circleimageview.CircleImageView>
@@ -25,6 +25,7 @@
         android:layout_below="@+id/profile_image"
         android:layout_alignEnd="@+id/profile_image"
         android:layout_marginTop="20dp"
+        android:textColor="@color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
     <TextView
         android:text="abodinen@syr.edu"
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
         android:layout_below="@+id/my_name"
+        android:textColor="@color/white"
         android:layout_alignStart="@+id/profile_image" />
 
 

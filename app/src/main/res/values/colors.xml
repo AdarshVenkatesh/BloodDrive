@@ -1,6 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="red">#F44336</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+        <color name="deep_orange">#3E2723</color>
+        <color name="cardone">#B9F6CA</color>
+        <color name="textColorPrimary">#FFFFFF</color>
+        <color name="windowBackground">#FFFFFF</color>
+        <color name="navigationBarColor">#000000</color>
+        <color name="black_semi_transparent">#B2000000</color>
+        <color name="background">#e5e5e5</color>
+        <color name="half_black">#808080</color>
+        <color name="white">#fafafa</color>
+        <color name="white_pressed">#f1f1f1</color>
+        <color name="pink">#e91e63</color>
+        <color name="status_pink">#C2185B</color>
+        <color name="pink_pressed">#ec407a</color>
+        <color name="blue_semi_transparent">#805677fc</color>
+        <color name="blue_semi_transparent_pressed">#80738ffe</color>
+        <color name="gray">#444440</color>
+        <color name="indigo">#3F51B5</color>
+        <color name="amber">#FFC107</color>
+        <color name="teal">#009688</color>
+        <color name="deepBlue">#01579B</color>
+        <color name="lightGreen">#50d2c2</color>
+        <color name="purple">#6563a4</color>
+        <color name="green">#00BCD4</color>
+        <color name="status_green">#0097A7</color>
+        <color name="main_background">#d3d6db</color>
+        <color name="transparent_black">#80000000</color>
+        <color name="transparent">@android:color/transparent</color>
+        <color name="gold">#F5E8B2</color>
+        <color name="bg">#f0f0f0</color>
+
+        <color name="shadow">#555555</color>
+        <color name="title">#777777</color>
+        <color name="fragment_background">#eeeeee</color>
+
+        <color name="black">#000000</color>
+        <color name="jet">#222222</color>
+        <color name="oil">#333333</color>
+        <color name="monsoon">#777777</color>
+        <color name="jumbo">#888888</color>
+        <color name="aluminum">#999999</color>
+        <color name="base">#AAAAAA</color>
+        <color name="iron">#CCCCCC</color>
+
+        <color name="primary">#E43F3F</color>
+        <color name="primary_dark">#E12929</color>
+        <color name="primary_darker">#CC1D1D</color>
+        <color name="accent">#FFFFFF</color>
+
+        <color name="material_orange">#ff6e41</color>
+        <color name="intro_red">#b11f29</color>
+
+        <color name="darkGreen">#1f94b1</color>
+        <color name="dark">#202122</color>
+
+        <color name="question_item_bg">#ffffff</color>
+        <color name="question_item_border">#c2c3c8</color>
+
+        <color name="feed_bg">#d3d6db</color>
+        <color name="feed_item_bg">#ffffff</color>
+        <color name="feed_item_border">#c2c3c8</color>
+        <color name="link">#0a80d1</color>
+        <color name="timestamp">#a0a3a7</color>
+        <color name="reply_message_colour">#FDD835</color>
+
+        <!-- Intro Screen Colours-->
+        <color name="welcome_intro_screen_color">#f1592a</color>
+        <color name="intreact_intro_screen_color">#a6206a</color>
+        <color name="news_intro_screen_color">#8f4e9f</color>
+        <color name="discussions_intro_screen_color">#c3986b</color>
+        <color name="events_intro_screen_color">#de0000</color>
+        <color name="bar_color">#125688</color>
+        <color name="seperator_color">#2196F3</color>
+
+        <!--Bottom bar -->
+        <color name="footer_colour">#f8f8f8</color>
+        <color name="brown">#FF5D4037</color>
+        <color name="status_blue">#7B1FA2</color>
+        <color name="blue">#9C27B0</color>
+        <color name="orange">#F44336</color>
+        <color name="status_orange">#D32F2F</color>
+        <color name="pale_yellow">#FF9800</color>
+        <color name="status_pale_yellow">#F57C00</color>
+        <color name="material_green">#009688</color>
+
+        <!--Splash and intro screens-->
+        <color name="dark_blue">#2561d8</color>
+
+        <!--News Colours-->
+        <color name="text_colour">#727272</color>
+        <color name="icon_text_colour">#B7CCC6</color>
+        <color name="footer_icons">#f8f8f8</color>
+
+        <!--Intro Screen colours-->
+
+        <!-- Screens background color-->
+        <color name="bg_screen1">#3FADBA</color>
+        <color name="bg_screen2">#FF4081</color>
+        <color name="bg_screen3">#c873f4</color>
+        <color name="bg_screen4">#6AAB46</color>
+        <color name="bg_screen5">#B3465D</color>
+
+        <!-- dots inactive colors -->
+        <color name="dot_dark_screen1">#14a895</color>
+        <color name="dot_dark_screen2">#d1395c</color>
+        <color name="dot_dark_screen3">#a854d4</color>
+        <color name="dot_dark_screen4">#6AAB46</color>
+        <color name="dot_dark_screen5">#B3465D</color>
+
+        <!-- dots active colors -->
+        <color name="dot_light_screen1">#8cf9eb</color>
+        <color name="dot_light_screen2">#f98da5</color>
+        <color name="dot_light_screen3">#e4b5fc</color>
+        <color name="dot_light_screen4">#8cc46e</color>
+        <color name="dot_light_screen5">#cd7e8f</color>
+
+        <array name="array_dot_active">
+            <item>@color/dot_light_screen1</item>
+            <item>@color/dot_light_screen2</item>
+            <item>@color/dot_light_screen3</item>
+            <item>@color/dot_light_screen4</item>
+            <item>@color/dot_light_screen5</item>
+        </array>
+
+        <array name="array_dot_inactive">
+            <item>@color/dot_dark_screen1</item>
+            <item>@color/dot_dark_screen2</item>
+            <item>@color/dot_dark_screen3</item>
+            <item>@color/dot_dark_screen4</item>
+            <item>@color/dot_dark_screen5</item>
+        </array>
+
+        <!-- Login Screen Colours-->
+        <color name="light_yellow">#D3BB55</color>
+        <color name="dark_yellow">#C0A437</color>
+        <color name="login_color">#1F7F99</color>
+
 </resources>

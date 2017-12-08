@@ -5,6 +5,7 @@ apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 
 repositories {
     maven { url 'https://maven.google.com' }
+    maven { url "https://jitpack.io" }
 }
 
 apply plugin: 'com.android.application'
@@ -21,7 +22,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled = true
 
-        manifestPlaceholders = [onesignal_app_id: "c24a44f7-859b-4e24-aaee-d7428d3fe9c9",
+        manifestPlaceholders = [onesignal_app_id               : "c24a44f7-859b-4e24-aaee-d7428d3fe9c9",
                                 // Project number pulled from dashboard, local value is ignored.
                                 onesignal_google_project_number: "REMOTE"]
     }
@@ -39,9 +40,10 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'de.hdodenhof:circleimageview:1.3.0'
     compile 'com.google.firebase:firebase-database:11.6.0'
     compile 'com.google.firebase:firebase-auth:11.6.0'
     compile 'com.android.support:design:26.+'
@@ -55,9 +57,18 @@ dependencies {
     compile 'com.firebaseui:firebase-ui-database:0.4.0'
     compile 'jp.wasabeef:recyclerview-animators:2.2.0'
     compile 'com.android.support:support-v4:26.+'
-    testCompile 'junit:junit:4.12'
     compile 'com.onesignal:OneSignal:[3.6.5, 3.99.99]'
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
-
+    compile 'com.google.android.gms:play-services-maps:11.6.0'
+    compile 'com.google.android.gms:play-services-location:11.6.0'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.google.code.gson:gson:1.7.2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.firebaseui:firebase-ui:0.6.2'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    compile 'com.facebook.fresco:fresco:0.10.0'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    testCompile 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'
