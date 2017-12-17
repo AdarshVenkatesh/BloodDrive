@@ -85,15 +85,13 @@ public class NavigationDrawer extends AppCompatActivity
                         myName.setText(firstName);
 
                         String url=(String)user.get("photoUrl");
+                        if(!url.equalsIgnoreCase(""))
                         Picasso.with (getApplicationContext()). load (url). into (myPicture);
                     }
-
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
-
                     }
                 });
-
                 super.onDrawerOpened(drawerview);
             }
         };
@@ -111,7 +109,6 @@ public class NavigationDrawer extends AppCompatActivity
 
         RequestOrDonate myFragment = new RequestOrDonate();
         getSupportFragmentManager().beginTransaction().replace(R.id.content_navigation_drawer,myFragment).addToBackStack("").commit();
-        getSupportFragmentManager().beginTransaction().commitAllowingStateLoss();
     }
 
     @Override

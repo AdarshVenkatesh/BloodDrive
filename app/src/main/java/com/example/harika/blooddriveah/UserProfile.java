@@ -167,7 +167,6 @@ public class UserProfile extends AppCompatActivity {
 
     private void cameraIntent()
     {
-
         if (checkSelfPermission(android.Manifest.permission.CAMERA)
                 != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{android.Manifest.permission.CAMERA},
@@ -194,7 +193,7 @@ public class UserProfile extends AppCompatActivity {
             // Continue only if the File was successfully created
             if (photoFile != null) {
                 photoURI = FileProvider.getUriForFile(this,
-                        "com.example.android.fileprovider",
+                        "com.example.android.ContentProvider",
                         photoFile);
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                 startActivityForResult(takePictureIntent, REQUEST_CAMERA);
@@ -226,7 +225,7 @@ public class UserProfile extends AppCompatActivity {
                     // Continue only if the File was successfully created
                     if (photoFile != null) {
                         photoURI = FileProvider.getUriForFile(this,
-                                "com.example.android.fileprovider",
+                                "com.example.android.ContentProvider",
                                 photoFile);
                         takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                         startActivityForResult(takePictureIntent, REQUEST_CAMERA);

@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         if(v==signup)
         {
-            Intent myIntent = new Intent(LoginActivity.this, RegisterActivity.class); //Replace MainActivity.class with your launcher class from previous assignments
+            Intent myIntent = new Intent(LoginActivity.this, RegisterActivity.class);
             LoginActivity.this.startActivity(myIntent);
         }
         if(v==login)
