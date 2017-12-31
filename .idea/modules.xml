@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BloodDriveAH.iml" filepath="$PROJECT_DIR$/BloodDriveAH.iml" />
+      <module fileurl="file://C:\Users\adars\Desktop\Android Final Project\MakeItSimple-master\MakeItSimple-master\BloodDriveAH.iml" filepath="C:\Users\adars\Desktop\Android Final Project\MakeItSimple-master\MakeItSimple-master\BloodDriveAH.iml" />
       <module fileurl="file://$PROJECT_DIR$/MakeItSimple-master.iml" filepath="$PROJECT_DIR$/MakeItSimple-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

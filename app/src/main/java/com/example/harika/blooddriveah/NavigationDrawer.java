@@ -20,6 +20,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.formats.NativeAd;
 import com.google.android.gms.vision.text.Text;
@@ -85,8 +86,9 @@ public class NavigationDrawer extends AppCompatActivity
                         myName.setText(firstName);
 
                         String url=(String)user.get("photoUrl");
-                        if(!url.equalsIgnoreCase(""))
-                        Picasso.with (getApplicationContext()). load (url). into (myPicture);
+                        if(url!="" && url!=null ) {
+                            Picasso.with(getApplicationContext()).load(url).into(myPicture);
+                        }
                     }
                     @Override
                     public void onCancelled(DatabaseError databaseError) {

@@ -34,6 +34,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     Spinner bloodGroup;
     FirebaseAuth mAuth;
     Button signMeUp;
+    private PrefManager prefManager;
     FirebaseAuth.AuthStateListener mAuthListener;
     UserData userdata=new UserData();
     User user =new User();
@@ -114,6 +115,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         user.put("contactNumber",s_contactNumber);
 
         userdata.addItemToServer(user);
+        prefManager = new PrefManager(this);
+        prefManager.setIsRegistered(false);
+        prefManager.setEmail(s_email);
+        prefManager.setPassword(s_password);
     }
 
     public boolean validate()

@@ -13,6 +13,11 @@
 
     </string-array>
 
+
+    <string name="fingerprint_description">Confirm fingerprint to continue</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+    <string name="description_fingerprint_icon">Fingerprint icon</string>
+
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_settings</item>
         <item>@string/nav_item_questions</item>

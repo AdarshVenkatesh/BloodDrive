@@ -43,11 +43,19 @@ public class HomeActivity extends AppCompatActivity {
     private TextView[] dots;
     private int[] layouts;
     private TextView supportText;
-
+    private PrefManager prefManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        prefManager = new PrefManager(this);
+//  This is for the first time welcome intro!!
+        if (!prefManager.isFirstTimeLaunch()) {
+            startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+                finish();
+        }
+
         // Set orientation of intro slides to portrait mode.
         //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
@@ -99,6 +107,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
     public void launchHomeScreen(View view) {
+        prefManager.setFirstTimeLaunch(false);
         startActivity(new Intent(HomeActivity.this, LoginActivity.class));
         finish();
     }
